@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    width: 100%;
+}
+
+.bottom {
+    background-color: rgb(241, 243, 243);
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.left {
+    background-color: rgb(39, 141, 189);
+    width: 50%;
+    height: 40px;
+    display: flex;
+    /* border-radius: 0px 0px 100px 0px; */
+}
+
+.right {
+    position: relative;
+    background-color: rgb(20, 18, 18);
+    width: 50%;
+    height: 40px;
+    /* border-radius: 0px 0px 0px 50px; */
+
+
+}
+
+.phone {
+    position: relative;
+    right: 50px;
+    top: 4px;
+    left: 190px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mail {
+    position: relative;
+    bottom: 4px;
+    left: 230px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-phone {
+    position: relative;
+    top: 8px;
+    right: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.fa-envelope {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    left: 400px;
+    font-size: 20px;
+    color: white;
+}
+
+.login-register {
+    position: absolute;
+    top: 5px;
+    left: 160px;
+    font-size: 20px;
+    color: white;
+}
+
+.fa-user {
+    position: relative;
+    top: 5px;
+    right: 100px;
+    left: 120px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: white;
+    color: rgb(43, 146, 194);
+}
+
+.fa-facebook {
+    position: relative;
+    top: 5px;
+    right: 100px;
+    left: 320px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: white;
+    color: rgb(43, 146, 194);
+}
+
+.fa-twitter {
+    position: relative;
+    top: 5px;
+    right: 100px;
+    left: 330px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: white;
+    color: rgb(43, 146, 194);
+}
+
+.fa-youtube {
+    position: relative;
+    top: 5px;
+    right: 100px;
+    left: 340px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: white;
+    color: rgb(43, 146, 194);
+}
+
+.fa-instagram {
+    position: relative;
+    top: 5px;
+    right: 100px;
+    left: 350px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: white;
+    color: rgb(43, 146, 194);
+}
+
+.bottom1 {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.travelsy-0,
+.travelsy-1 {
+    position: relative;
+    top: 30px;
+    left: 100px;
+    font-size: 40px;
+}
+
+.travelsy-0 {
+    color: rgb(23, 143, 199);
+}
+
+.navigation {
+    display: flex;
+    padding: 25px;
+    margin: 100px;
+    position: relative;
+    bottom: 80px;
+    left: 80px;
+    font-size: 20px;
+}
+
+.navigation li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+.color{
+    color: rgb(0, 110, 255);
+}
+.fa-magnifying-glass {
+    /* height: 48px;
+    width: 50px; */
+
+    font-size: 30px;
+    position: relative;
+    right: 10px;
+    top: 50px;
+    bottom: 300px;
+    /* border: 1px solid rgb(74, 171, 228); */
+    color: rgb(0, 183, 255);
+}
+
+.btn {
+    height: 50px;
+    width: 180px;
+    border-radius: 50% 50% 50% 50%;
+    position: relative;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.fa-square-phone {
+    position: relative;
+    right: 90px;
+    top: 48px;
+    /* left: 220px; */
+    font-size: 30px;
+    color: white;
+}
+
+.para {
+    position: relative;
+    right: 20px;
+    top: 2px;
+    font-size: 20px;
+}
+
+.sub-title {
+    position: relative;
+    top: 100px;
+}
+
+.bottom2 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(/img/ojo4yq0-1-bg.png);
+    /* background-color: aqua; */
+}
+
+.sub-title {
+    position: absolute;
+    top: 180px;
+    bottom: 200px;
+    left: 160px;
+}
+
+.sub-title-0 {
+    position: absolute;
+    top: 210px;
+    left: 150px;
+    font-size: 50px;
+}
+
+.middle {
+    position: absolute;
+    top: 213px;
+    left: 340px;
+    font-size: 50px;
+    color: rgb(55, 145, 230);
+}
+
+.middle1 {
+    position: absolute;
+    top: 215px;
+    left: 550px;
+    font-size: 50px;
+}
+
+.middle2 {
+    position: absolute;
+    left: 55px;
+    top: 235px;
+}
+
+.img1 {
+    width: 15rem;
+    height: 17rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 430px;
+    left: 630px;
+    background-size: 179.412% 100%;
+    background-position: -10.120rem 0;
+    background-image: url(/img/rectangle-14323.png);
+    border-radius: 1rem;
+}
+
+.img2 {
+    width: 15rem;
+    height: 13rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 200px;
+    left: 630px;
+    
+}
+.img3{
+    width: 15.5rem;
+    height: 25.4rem;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 250px;
+    left: 890px;
+}
+.img4{
+    height: 150px;
+    border: 30px solid rgb(31, 130, 211);
+border-radius: 50% 50%;
+position: absolute;
+    bottom: 340px;
+    left: 800px;
+    background-color: white;
+}
+
+.rev{
+    width: 250px;
+    position: absolute;
+    bottom: 170px;
+    right: 750px;
+}
+.bottom3{
+    background-color: aqua;
+    width: 100%;
+    height: 70px;
+}
+.fa-calendar{
+    position: relative;
+    right: 810px;
+    bottom: 165px;
+    color: white;
+}
