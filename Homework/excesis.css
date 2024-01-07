@@ -341,7 +341,7 @@ body {
     background-image: url(/img/HD-wallpaper-sky-blue-colour-blue-shadow-shadow-blue.jpg);
     /* background-color: rgb(39, 141, 189); */
     width: 40%;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     /* border-radius: 0px 0px 100px 0px; */
 }
@@ -350,7 +350,7 @@ body {
     /* position: relative; */
     background-color: rgb(253, 247, 247);
     width: 60%;
-    height: 120vh;
+    height: 100vh;
     /* border-radius: 0px 0px 0px 50px; */
 }
 
@@ -360,7 +360,7 @@ body {
     height: 12vh;
     border-radius: 10rem;
     position: relative;
-    bottom: 750px;
+    bottom: 600px;
     left: 100px;
     -webkit-box-shadow: -1px 1px 9px 5px rgba(252, 247, 247, 0.75);
     -moz-box-shadow: -1px 1px 9px 5px rgba(243, 237, 237, 0.75);
@@ -406,7 +406,7 @@ body {
     width: 20rem;
     height: 30.7rem;
     position: absolute;
-    top: 1300px;
+    top: 1150px;
     left: 100px;
     background-size: 125% 99.883%;
     background-position: -3rem -0rem;
@@ -423,8 +423,8 @@ body {
     border: 5px solid white;
     border-radius: 30rem;
     position: relative;
-    top: 570px;
-    left: 420px;
+    top: 430px;
+    left: 435px;
 }
 
 .img7 {
@@ -432,57 +432,114 @@ body {
     height: 12.5rem;
     background-size: 125% 99.883%;
     background-position: -4.120rem 0;
-
     background-image: url(/img/asset-1-1.png);
     background-position: -1.120rem 0;
     border: none;
     border-radius: 30rem;
     background-repeat: no-repeat;
     position: relative;
-    top: 350px;
+    top: 220px;
     left: 250px;
 }
 
 .text2 {
     position: absolute;
-    top: 1250px;
+    top: 1150px;
     left: 650px;
     color: rgb(0, 153, 255);
 }
 
 .text3 {
     position: absolute;
-    top: 1280px;
+    top: 1180px;
     left: 650px;
 }
 
 .text4 {
     position: absolute;
-    top: 1350px;
+    top: 1240px;
     left: 650px;
     color: gray;
 }
 
 .text5 {
     position: absolute;
-    top: 1480px;
+    top: 1370px;
     left: 650px;
     color: gray;
 }
 
 .text6 {
     position: absolute;
-    top: 1560px;
+    top: 1450px;
+    left: 680px;
+    line-height: 35px;
+}
+
+/* .image4{
+    background-image: url(/img/bxs-send-e1r.png);
+    height: 3vh;
+    width: 2%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1493px;
+    left: 620px;
+    border: 0%;
+    
+}
+.image5{
+    background-image: url(/img/bxs-send-qFz.png);
+    height: 3vh;
+    width: 2%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1455px;
+    left: 620px;
+    border: 0%;
+    
+}
+.image6{
+    background-image: url(/img/bxs-send-e1r.png);
+    height: 3vh;
+    width: 2%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1493px;
+    left: 620px;
+    border: 0%;
+    
+} */
+.icon1{
+    position: absolute;
+    top: 1488px;
+    left: 650px;
+    font-size: 20px;
+    color: rgb(0, 174, 255);
+    rotate: 56deg;
+}
+.icon2{
+    position: absolute;
+    top: 1453px;
+    left: 650px;
+    font-size: 20px;
+    color: rgb(0, 174, 255);
+    rotate: 56deg;
+}
+.icon3{
+    position: absolute;
+    top: 1523px;
+    left: 650px;
+    font-size: 20px;
+    color: rgb(0, 174, 255);
+    rotate: 56deg;
+}
+.bu1 {
+    position: absolute;
+    top: 1580px;
     left: 650px;
     line-height: 35px;
 }
 
-.bu1 {
-    position: absolute;
-    top: 1700px;
-    left: 650px;
-    line-height: 35px;
-}
 /* 
 .img8 {
     background-image: url(/img/material-symbols-arrow-right-alt-rounded-v2g.png);
@@ -494,15 +551,107 @@ body {
     line-height: 35px;
     
 } */
-.fa-arrow-right-long{
+.fa-arrow-right-long {
     position: absolute;
-    top: 1713px;
-    left:790px;
+    top: 1594px;
+    left: 790px;
     font-size: 25px;
-    color: white;
+    color: rgb(231, 223, 223);
 }
-.al1{
+
+.al1 {
     position: absolute;
     left: 23px;
     top: 10px;
+}
+
+.bottom5 {
+    background-color: rgb(235, 247, 247);
+    height: 130vh;
+    width: 100%;
+    position: relative;
+}
+
+.card-group {
+    margin: 30px;
+    width: 93%;
+    height: 50vh;
+    position: absolute;
+    top: 150px;
+    height: 90vh;
+}
+
+.image1 {
+    width: 100%;
+    height: 17rem;
+}
+
+.image2 {
+    width: 100%;
+    height: 17rem;
+}
+
+.image3 {
+    width: 100%;
+    height: 17rem;
+}
+
+.card {
+    width: 500px;
+    height: 100vh;
+    margin: 30px;
+}
+
+.text7 {
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    font-size: 30px;
+    color: rgb(0, 140, 255);
+}
+
+.text8 {
+    position: absolute;
+    top: 100px;
+    left: 390px;
+}
+
+.card-text1 {
+    position: absolute;
+    left: 30px;
+    font-weight: bold;
+}
+
+.fa-location-dot {
+    position: absolute;
+    left: 10px;
+    bottom: 91px;
+    color: rgb(0, 140, 255);
+}
+
+.card-text2 {
+    position: absolute;
+    left: 145px;
+    bottom: 68px;
+    font-weight: bold;
+}
+
+.fa-user-plus {
+    position: absolute;
+    left: 118px;
+    bottom: 89px;
+    color: rgb(0, 140, 255);
+}
+
+.text9 {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    font-size: 40px;
+}
+
+.text10 {
+    position: absolute;
+    left: 120px;
+    bottom: 5px;
 }
