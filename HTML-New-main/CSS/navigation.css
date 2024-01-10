@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+.one{
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 20px;
+    display: inline-block;
+    padding: 20px;
+    margin: 20PX;
+    border-color: rgb(241, 234, 234);
+    border-width: 5px;
+    border-style: solid;
+}
+li,h1,li{
+    display: inline;
+}
+ul{
+    margin-left: 70%;
+}

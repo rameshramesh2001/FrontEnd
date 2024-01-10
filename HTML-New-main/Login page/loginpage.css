@@ -1,0 +1,84 @@
+body{
+    background-image: url(/img/premium_photo-1673697240011-76f7f9220300.avif);
+background-size: 100%;
+/* filter: blur(20px); */
+/* background-repeat: no-repeat; */
+
+}
+
+
+.one{
+    /* background-image: url(/img/premium_photo-1673306778968-5aab577a7365.avif); */
+    background-color: rgb(243, 238, 238);
+    width: 500px;
+    height: 350px;
+    border: 2px black solid;
+    position: relative;
+    top: 130px;
+    bottom: 150px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.three{
+    height: 40px;
+    width: 300px;
+    position: relative;
+    top: 10px;
+    right: 15px;
+    bottom: 70px;
+    margin: 15px;
+}
+.two{
+    background-color: rgb(145, 145, 209);
+    height: 30px;
+    width: 100px;
+    position: relative;
+    top: 20px;
+    bottom: 70px;
+}
+.fa-eye{
+    position: relative;
+    right: 50px;
+    top: 10px;
+}
+.four{
+    height: 40px;
+    width: 300px;
+    position: relative;
+    top: 10px;
+    right: 5px;
+    bottom: 70px;
+    margin: 15px;
+    
+}
+.but{
+    user-select: none;
+    background-color: rgb(221, 43, 43);
+    color: white;
+    border: 2px rgb(236, 101, 101) solid;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 200px;
+    right: 100px;
+    bottom: 30px;
+    font-size: 25px;
+    
+}
+.but:hover{
+    border: 1px black solid;
+    cursor: pointer;
+
+}
+.but:active{
+    border: 2px gray solid;
+}
+h1{
+    position: relative;
+    right: 15px;
+    bottom: 20px;
+    top: 20px;
+}

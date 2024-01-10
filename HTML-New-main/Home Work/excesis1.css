@@ -1,0 +1,108 @@
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fuild {
+    background-color: rgb(158, 158, 142);
+    height: 700px;
+}
+
+
+.content {
+    border: 1px solid rgb(27, 20, 20);
+    border-radius: 30px;
+    box-shadow: 100px;
+    height: 300px;
+    width: 300px;
+    margin-left: 200px;
+    position: relative;
+    bottom: 100px;
+    top: 30px;
+    right: 150px;
+    left: 200px;
+}
+
+.image{
+    background-image: url(/Img/bitmoji.jpg);
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 20px;
+    left: 500px;
+    bottom: 260px;
+    border-radius: 50% 50% 50% 50%; 
+}
+.name{
+    padding: 100px;
+   padding-left: 3px;
+   padding-bottom: 5px;
+}
+.fa-star{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    color: gold;
+}
+.role{
+    width: 200px;
+    position: relative;
+    right: 25px;
+}
+.one{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 200px 200px 200px 200px;
+}
+.two{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 200px 200px 200px 200px;
+}
+.three{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 200px 200px 200px 200px;
+}
+.four{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.content1{
+    border: 1px solid rgb(27, 20, 20);
+    border-radius: 30px;
+    box-shadow: 100px;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    position: relative;   
+    bottom: 370px;
+    right: 100px;
+    left: 760px;
+}
+.content2{
+    border: 1px solid rgb(27, 20, 20);
+    border-radius: 30px;
+    box-shadow: 100px;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    position: relative;  
+    left: 100px;
+    bottom: 50px;
+}
+.content3{
+    border: 1px solid rgb(27, 20, 20);
+    border-radius: 30px;
+    box-shadow: 100px;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    position: relative;  
+    left: 150px;
+    bottom: 50px;
+}
