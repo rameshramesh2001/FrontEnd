@@ -9,11 +9,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
         body{margin: 0%;padding: 0%;}
-        .main{height: 13vh;width:95%;background-color: white;position: relative;left: 30px;top: 20px;}
-        .text1{position: absolute;top: 10px;left: 150px;}
+        .main{height: 15vh;width:95%;background-color: white;position: relative;left: 30px;top: 20px;}
+        .text1{position: absolute;top: 15px;left: 130px;}
         .fa-star{margin: 2px;position: relative;top: 8px;right:5px;color: gold;}
         .fa-star-half-stroke{margin: 2px;position: relative;top: 8px;color: gold;right:5px}
-        .text2{position: absolute;top: 8px;left: 320px;}
+        .text2{position: absolute;top: 15px;left: 320px;}
         li{font-size: 15px;}
         .text3{position: absolute;top: 20px;left: 650px;}
         .fa-circle{font-size: 10px;margin: 5px;}
@@ -26,6 +26,7 @@
         .fa-cart-shopping{position: relative;bottom: 30px;}
         .text6{position: absolute;top: 15px;right: 50px;}
         .text7{position: absolute;top: 30px;right: 30px;}
+        img{margin: 20px;position: absolute;bottom: 1px;}
         /* .table{padding: 10px;}
         .fa-star{color: gold;margin: 2px;}
         .fa-star-half-stroke{color: gold;margin: 2px;}
@@ -42,7 +43,7 @@
     <!-- d-flex align-content-center align-items-center -->
     <div class="container-fulid bg-secondary"id="list" style="height: 665px;">
         <div class="main">
-            <img src="./img1/images.jpeg" width="80">
+            <img src="./img1/apple2.jpeg" width="70">
             <h3 class="text1 fs-6">Water Proof<br>Mobilephone<br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></h3>
             <ul class="text2 fs-6">
                 <li>12MP TrueDepth front camara</li>
@@ -92,18 +93,41 @@
         </div>
     </div> -->
     <script>
+       const json =  {"data":[{"photo":"./img1/apple2.jpeg","name":"Water Proof <br>mobile","details":"12MP TrueDepth front camara","Battery":"Battery Life Upto 22Hours","network":"5G and Gligabit LTE","color":"font1","price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/sumsung.jpeg","name":"Smart phone <br>dual camera","details":"20MP TrueDepth front camara","Battery":"Battery Life Upto 20Hours","network":"5G and Gligabit LTE","color":"#FFA500","price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/Vivo.jpeg","name":" Black Color<br>Smart phone","details":"22MP TrueDepth front camara","Battery":"Battery Life Upto 19Hours","network":"5G and Gligabit LTE","color":["blue","red","orange"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/apple.jpg","name":"latest <br>Smart phone <br>under 2000","details":"18MP TrueDepth front camara","Battery":"Battery Life Upto 18Hours","network":"5G and Gligabit LTE","color":["blue","red","orange"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/apple2.jpeg","name":"New phone <br>max pro","details":"12MP TrueDepth front camara","Battery":"Battery Life Upto 17Hours","network":"5G and Gligabit LTE","color":["blue","red","orange"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/sumsung.jpeg","name":"Smart phone <br>pro +256","details":"32MP TrueDepth front camara","Battery":"Battery Life Upto 17Hours","network":"5G and Gligabit LTE","color":["blue","red","orange"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"}
+
+
+
+
+
+]}
+//         const json = {"data":[{"photo":".../img1/images.jpeg"},
+//         {"photo":".../img1/Oppo.jpg"},
+//         {"photo":".../img1/Vivo.jpg"
+
+
+
+
+// }]}
         let a = ""
-        for (let index = 0; index < 6; index++) {
+        for (let index = 0; index < json.data.length; index++) {
+         let product = json.data[index]
+
+         console.log(index+" :::: "+JSON.stringify(product))
             a = `${a}  <div class="container-fulid bg-secondary"id="list">
             <div class="main" id="list">
-            <img src="./img1/images.jpeg" width="80">
-            <h3 class="text1 fs-6">Water Proof<br>Mobilephone<br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></h3>
+            <img src=${product.photo} width="45">
+            <h3 class="text1 fs-6">${product.name}</h3>
             <ul class="text2 fs-6">
-                <li>12MP TrueDepth front camara</li>
-                <li>Battery Life Upto 22Hours</li>
-                <li>5G and Gligabit LTE</li>
+                <li>${product.details}</li>
+                <li>${product.Battery}</li>
+                <li>${product.network}</li>
             </ul>
-            <h5 class="text3">Colors<br><i class="fa-solid fa-circle"></i><i class="font1 fa-solid fa-circle"></i><i class="font2 fa-solid fa-circle"></i></h5>
+            <h5 class="text3">Colors<br><i class="fa-solid fa-circle"></i><i class="${product.color} fa-solid fa-circle"></i><i class="font2 fa-solid fa-circle"></i></h5>
                 <del class="de1">$500</del>
                 <h3 class="text4">$450</h3>
                 <button class="btn btn-primary"><h6 class="text5">Add</h6><i class="fa-solid fa-cart-shopping"></i></button>
