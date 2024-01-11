@@ -93,12 +93,12 @@
         </div>
     </div> -->
     <script>
-       const json =  {"data":[{"photo":"./img1/apple2.jpeg","name":"Water Proof <br>mobile","details":"12MP TrueDepth front camara","Battery":"Battery Life Upto 22Hours","network":"5G and Gligabit LTE","color":"font1","price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
-       {"photo":"./img1/sumsung.jpeg","name":"Smart phone <br>dual camera","details":"20MP TrueDepth front camara","Battery":"Battery Life Upto 20Hours","network":"5G and Gligabit LTE","color":"#FFA500","price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
-       {"photo":"./img1/Vivo.jpeg","name":" Black Color<br>Smart phone","details":"22MP TrueDepth front camara","Battery":"Battery Life Upto 19Hours","network":"5G and Gligabit LTE","color":["blue","red","orange"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
-       {"photo":"./img1/apple.jpg","name":"latest <br>Smart phone <br>under 2000","details":"18MP TrueDepth front camara","Battery":"Battery Life Upto 18Hours","network":"5G and Gligabit LTE","color":["blue","red","orange"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
-       {"photo":"./img1/apple2.jpeg","name":"New phone <br>max pro","details":"12MP TrueDepth front camara","Battery":"Battery Life Upto 17Hours","network":"5G and Gligabit LTE","color":["blue","red","orange"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
-       {"photo":"./img1/sumsung.jpeg","name":"Smart phone <br>pro +256","details":"32MP TrueDepth front camara","Battery":"Battery Life Upto 17Hours","network":"5G and Gligabit LTE","color":["blue","red","orange"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"}
+       const json =  {"data":[{"photo":"./img1/apple2.jpeg","name":"Water Proof <br>mobile","details":"12MP TrueDepth front camara","Battery":"Battery Life Upto 22Hours","network":"5G and Gligabit LTE","color":["#798787","#903423","#000000"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/sumsung.jpeg","name":"Smart phone <br>dual camera","details":"20MP TrueDepth front camara","Battery":"Battery Life Upto 20Hours","network":"5G and Gligabit LTE","color":["#907865","red"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/Vivo.jpeg","name":" Black Color<br>Smart phone","details":"22MP TrueDepth front camara","Battery":"Battery Life Upto 19Hours","network":"5G and Gligabit LTE","color":["#875634","#999999","#123456"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/apple.jpg","name":"latest <br>Smart phone <br>under 2000","details":"18MP TrueDepth front camara","Battery":"Battery Life Upto 18Hours","network":"5G and Gligabit LTE","color":["#875634","#124356","#202312"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/apple2.jpeg","name":"New phone <br>max pro","details":"12MP TrueDepth front camara","Battery":"Battery Life Upto 17Hours","network":"5G and Gligabit LTE","color":["#875634","#124356","#903423"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"},
+       {"photo":"./img1/sumsung.jpeg","name":"Smart phone <br>pro +256","details":"32MP TrueDepth front camara","Battery":"Battery Life Upto 17Hours","network":"5G and Gligabit LTE","color":["#875634","#124356","#903423"],"price":["$500","$450"],"button":"Add","dot":"…","scrolldown":"▼"}
 
 
 
@@ -117,24 +117,30 @@
         for (let index = 0; index < json.data.length; index++) {
          let product = json.data[index]
 
+        //  let colors = ""
+        //  product.color.forEach(color=>{
+        //     colors = `${colors} <i class="fa-solid fa-circle" style="color:${color};"></i>`
+        //  })
+        let colors = product.color.map(color=>{ return ` <i class="fa-solid fa-circle" style="color:${color};"></i>`})
+        colors = colors.join("");
          console.log(index+" :::: "+JSON.stringify(product))
-            a = `${a}  <div class="container-fulid bg-secondary"id="list">
-            <div class="main" id="list">
-            <img src=${product.photo} width="45">
-            <h3 class="text1 fs-6">${product.name}</h3>
-            <ul class="text2 fs-6">
-                <li>${product.details}</li>
-                <li>${product.Battery}</li>
-                <li>${product.network}</li>
-            </ul>
-            <h5 class="text3">Colors<br><i class="fa-solid fa-circle"></i><i class="${product.color} fa-solid fa-circle"></i><i class="font2 fa-solid fa-circle"></i></h5>
-                <del class="de1">$500</del>
-                <h3 class="text4">$450</h3>
-                <button class="btn btn-primary"><h6 class="text5">Add</h6><i class="fa-solid fa-cart-shopping"></i></button>
-                <h2 class="text6 text-secondary">…</h2>
-                <h5 class="text7 text-secondary">▼</h5>
-        </div>
-    </div>`
+a = `${a}<div class="container-fulid bg-secondary"id="list">
+                <div class="main" id="list">
+                    <img src=${product.photo} width="45">
+                    <h3 class="text1 fs-6">${product.name}</h3>
+                    <ul class="text2 fs-6">
+                        <li>${product.details}</li>
+                        <li>${product.Battery}</li>
+                            <li>${product.network}</li>
+                    </ul>
+                        <h5 class="text3">Colors<br>${colors}</h5>
+                            <del class="de1">$500</del>
+                            <h3 class="text4">$450</h3>
+                            <button class="btn btn-primary"><h6 class="text5">Add</h6><i class="fa-solid fa-cart-shopping"></i></button>
+                            <h2 class="text6 text-secondary">…</h2>
+                            <h5 class="text7 text-secondary">▼</h5>
+                </div>
+            </div>`
             
         }
         document.getElementById("list").innerHTML = a

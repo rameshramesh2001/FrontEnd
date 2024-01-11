@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Task1</title>
+    <style>
+        body{margin: 0%;padding: 0%;}
+        .bottom{position: relative;top: 20px;left: 20px;height: 30vh;width: 60%;background-color: white;border-radius: 2%;}
+        .image1{width: 50px;height: 80px;position: absolute;top: 2px;margin: 10px;}
+        .text1{position: absolute;top: 15px;left: 90px; font-size: 20px;}
+        .fa-star{margin: 2px;position: relative;top: 8px;right:5px;color: gold;}
+        .fa-star-half-stroke{margin: 2px;position: relative;top: 8px;color: gold;right:5px}
+        .text2{position: absolute;top: 65px;font-size: 15px;color: gray;}
+        .line{position: absolute;bottom: 70px;left: 20px;}
+        .text3{position: absolute;bottom: 50px;left: 20px;color: gray;}
+        .de1{position: absolute;bottom: 30px;left: 20px;color: gray;}
+        .text4{position: absolute;bottom: 22px;left: 80px;}
+        .text5{position: absolute;bottom: 50px;left: 310px;}
+        .sel{position: absolute;bottom: 30px;left: 300px;width: 100px;}
+        .text6{position: absolute;bottom: 47px;left:550px;color: gray;}
+        .text7{position: absolute;bottom: 18px;left: 550px;}
+        .bottom1{position: relative;bottom:645px;left: 830px;height: 50vh;width: 30%;background-color: white;border-radius:5%;display: flex;}
+        .left{width: 50%;background-color: rgb(245, 242, 242);border-radius:5%0%0%5%}
+        .right{width: 50%;background-color: rgb(245, 242, 242);border-radius:0%5%5%0%}
+        .text11{position: absolute;left: 10px;top: 10px;}
+        .text12{position: absolute;right: 0px;bottom: 286px;}
+        .fa-heart{position: absolute;bottom: 170px;right: 30px;}
+        .fa-trash{position: absolute;bottom: 170px;right: 60px;}
+        /* .text21{position: absolute;right: 40px;top: 12px;}
+        .text22{position: absolute;right: 40px;top: 12px;}
+        .text23{position: absolute;right: 40px;top: 12px;}
+        .text23{position: absolute;right: 40px;top: 12px;}
+        .text24{position: absolute;right: 40px;top: 12px;} */
+
+
+
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-secondary min-vh-100" id="task12">
+        <div class="bottom">
+            <img class="image1" src="./img1/apple2.jpeg">
+            <h3 class="text1">Water Proof Mobilephone<br><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <p class="text2">Color:Gray</p></h3>
+              <p class="line">__________________________________________________________________________________________</p>
+             <h5 class="text3">Price</h5>
+              <del class="de1">$500</del>
+              <h5 class="text4">$450</h5>
+              <h6 class="text5">Quantity</h6>
+              <select class="sel">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+               
+              </select>
+              <h5 class="text6">Total</h5>
+              <h5 class="text7">$900</h5>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-trash"></i>
+        </div>          
+</div>
+<div class="container1-fluid bg-secondary">
+    <div class="bottom1">
+       <div class="left">
+        <h6 class="text11">Order summary</h6><br><hr>
+        <p class="text21 m-3">Sub Total:</p><hr>
+        <p class="text22 m-3">Discount:</p><hr>
+        <p class="text23 m-3">Shiping Charge:</p><hr>
+        <p class="text23 m-3">Estimated Tax:</p><hr>
+        <p class="text24 m-3">Total:</p>
+       </div>
+       <div class="right">
+        <h6 class="text12 m-3">#MN0124</h6><br><hr>
+        <p class="text31 m-3 text-end">$720</p><hr>
+        <p class="text32 m-3 text-end">-$78</p><hr>
+        <p class="text33 m-3 text-end">$25</p><hr>
+        <p class="text33 m-3 text-end">$18.20</p><hr>
+        <p class="text34 m-3 text-end">$745.2</p>
+       </div>
+    </div>          
+</div>
+
+<script>
+    let b = ""
+    for (let index = 0; index < 3; index++) {
+        b = `${b}<div class="container-fluid bg-secondary" id="task12">
+        <div class="bottom m-3">
+            <img class="image1" src="./img1/apple2.jpeg">
+            <h3 class="text1">Water Proof Mobilephone<br><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <p class="text2">Color:Gray</p></h3>
+              <p class="line">__________________________________________________________________________________________</p>
+             <h5 class="text3">Price</h5>
+              <del class="de1">$500</del>
+              <h5 class="text4">$450</h5>
+              <h6 class="text5">Quantity</h6>
+              <select class="sel">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+               
+              </select>
+              <h5 class="text6">Total</h5>
+              <h5 class="text7">$900</h5>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-trash"></i>
+        </div>          
+</div>`
+        
+    }
+    document.getElementById("task12").innerHTML = b
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <thead class="head1">
+    <tr>
+      <th><img class="image1" src="./img1/apple2.jpeg"></th>
+      <th><h3 class="text1">Water Proof Mobilephone<br><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+        <p class="text2">Color:Gray</p></h3></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+      
+    </tr>
+    <tbody>
+</table> -->
