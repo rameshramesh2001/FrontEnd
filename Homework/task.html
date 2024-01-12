@@ -18,7 +18,7 @@
         .text3{position: absolute;bottom: 50px;left: 20px;color: gray;}
         .de1{position: absolute;bottom: 30px;left: 20px;color: gray;}
         .text4{position: absolute;bottom: 22px;left: 80px;}
-        .text5{position: absolute;bottom: 50px;left: 310px;}
+        .text5{position: absolute;bottom: 50px;left: 310px;color: gray;}
         .sel{position: absolute;bottom: 30px;left: 300px;width: 100px;}
         .text6{position: absolute;bottom: 47px;left:550px;color: gray;}
         .text7{position: absolute;bottom: 18px;left: 550px;}
@@ -29,6 +29,9 @@
         .text12{position: absolute;right: 0px;bottom: 286px;}
         .fa-heart{position: absolute;bottom: 170px;right: 30px;}
         .fa-trash{position: absolute;bottom: 170px;right: 60px;}
+        .btn{position: absolute;top: 650px;right: 420px;width: 120px;height: 6vh}
+        .fa-cart-shopping{position: absolute;top: 661px;right: 415px;width: 120px;color: white;;}
+        .txt{position: absolute;right: 20px;top: 6px;color: white;}
         /* .text21{position: absolute;right: 40px;top: 12px;}
         .text22{position: absolute;right: 40px;top: 12px;}
         .text23{position: absolute;right: 40px;top: 12px;}
@@ -59,6 +62,7 @@
               <del class="de1">$500</del>
               <h5 class="text4">$450</h5>
               <h6 class="text5">Quantity</h6>
+            
               <select class="sel">
                 <option>1</option>
                 <option>2</option>
@@ -69,9 +73,10 @@
               <h5 class="text7">$900</h5>
               <i class="fa-regular fa-heart"></i>
               <i class="fa-solid fa-trash"></i>
+             
         </div>          
 </div>
-<div class="container1-fluid bg-secondary">
+<div class="container1-fluid bg-secondary" id="demo">
     <div class="bottom1">
        <div class="left">
         <h6 class="text11">Order summary</h6><br><hr>
@@ -80,6 +85,8 @@
         <p class="text23 m-3">Shiping Charge:</p><hr>
         <p class="text23 m-3">Estimated Tax:</p><hr>
         <p class="text24 m-3">Total:</p>
+        <button class="btn btn-success"><p class="txt">checkout</p></button>
+        <i class="fa-solid fa-cart-shopping"></i>
        </div>
        <div class="right">
         <h6 class="text12 m-3">#MN0124</h6><br><hr>
@@ -89,23 +96,38 @@
         <p class="text33 m-3 text-end">$18.20</p><hr>
         <p class="text34 m-3 text-end">$745.2</p>
        </div>
+      
     </div>          
 </div>
 
 <script>
+const json = {"data":[{"photo":".//img1/apple2.jpeg","model":"Water Proof Mobilephone","color":"Color: gray","oldprice":"$500","price":"$450","total":"$900"},
+{"photo":".//img1/apple.jpg","model":"Smartphone Dualcamera","color":"Color: white","oldprice":"$1000","price":"$240","total":"$720"},
+{"photo":".//img1/sumsung.jpeg","model":"BlackColor Smartphone","color":"Color: Red","oldprice":"$500","price":"$350","total":"$480"}
+]}
+
+
+
+
+
+
     let b = ""
-    for (let index = 0; index < 3; index++) {
+    json.data.forEach(list => {
+        
+    
+    // for (let index = 0; index < json.data.length; index++) {
+    //     let list = json.data[index]
         b = `${b}<div class="container-fluid bg-secondary" id="task12">
         <div class="bottom m-3">
-            <img class="image1" src="./img1/apple2.jpeg">
-            <h3 class="text1">Water Proof Mobilephone<br><i class="fa-solid fa-star"></i>
+            <img class="image1" src="${list.photo}">
+            <h3 class="text1">${list.model}<br><i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-              <p class="text2">Color:Gray</p></h3>
+              <p class="text2">${list.color}</p></h3>
               <p class="line">__________________________________________________________________________________________</p>
              <h5 class="text3">Price</h5>
-              <del class="de1">$500</del>
-              <h5 class="text4">$450</h5>
+              <del class="de1">${list.oldprice}</del>
+              <h5 class="text4">${list.price}</h5>
               <h6 class="text5">Quantity</h6>
               <select class="sel">
                 <option>1</option>
@@ -114,14 +136,51 @@
                
               </select>
               <h5 class="text6">Total</h5>
-              <h5 class="text7">$900</h5>
+              <h5 class="text7">${list.total}</h5>
               <i class="fa-regular fa-heart"></i>
               <i class="fa-solid fa-trash"></i>
+             
         </div>          
 </div>`
         
-    }
+})
     document.getElementById("task12").innerHTML = b
+    
+const user = {"task":{"subtotal":"$700","discount":"$-55","shippingcharge":"$50","estamitedtax":"$18.20","totalprice":"$1000"
+
+
+
+
+}}
+
+
+let c = ""
+   let value = user.task
+    c = `${c} <div class="container1-fluid bg-secondary" id="demo">
+    <div class="bottom1">
+       <div class="left">
+        <h6 class="text11">Order summary</h6><br><hr>
+        <p class="text21 m-3">Sub Total:</p><hr>
+        <p class="text22 m-3">Discount:</p><hr>
+        <p class="text23 m-3">Shiping Charge:</p><hr>
+        <p class="text23 m-3">Estimated Tax:</p><hr>
+        <p class="text24 m-3">Total:</p>
+        <button class="btn btn-success"><p class="txt">checkout</p></button>
+        <i class="fa-solid fa-cart-shopping"></i>
+       </div>
+       <div class="right">
+        <h6 class="text12 m-3">#MN0124</h6><br><hr>
+        <p class="text31 m-3 text-end">${value.subtotal}</p><hr>
+        <p class="text32 m-3 text-end">-${value.discount}</p><hr>
+        <p class="text33 m-3 text-end">${value.shippingcharge}</p><hr>
+        <p class="text33 m-3 text-end">${value.estamitedtax}</p><hr>
+        <p class="text34 m-3 text-end">${value.totalprice}</p>
+       </div>
+      
+    </div>          
+</div>`
+document.getElementById("demo").innerHTML = c
+
 </script>
 
 
