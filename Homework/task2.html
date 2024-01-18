@@ -11,7 +11,7 @@
    body{margin: 0%;padding: 0%;}
    .head{width: 96%;height: 800px;background-color:#ffffff;position: relative;}
    .row{position: relative;top: 50px;right:8px;}
-   .card{height: 180px;width: 100%;}
+   .card{height: 130px;width: 100%;}
    .txt{position: absolute;top: 20px;left: 50px;height: 40px;width: 320px;border: none;color: gray;}
    .fa-magnifying-glass{position: absolute;top: 31px;left: 62px;color: gray;}
    .btn{position:absolute;right: 70px;height: 40px;width: 150px;}
@@ -19,71 +19,123 @@
    .fa-caret-down{position:absolute;right:90px;top: 11px;color: rgb(255, 252, 252);}
    .txt2{position:absolute;right:20px;top: 9px;color:rgb(32, 8, 8);}
    .txt3{position:absolute;right:45px;top: 7px;color:rgb(32, 8, 8);}
-   .pic{width: 50px;height: 50px;border-radius: 50%;border: 10px solid rgb(15, 142, 226);}
+   .pic{width: 40px;height: 40px;border-radius: 20%;border: 10px solid rgb(214, 220, 224);position: absolute;left: 20px;top: 20px;background-color: rgb(214, 220, 224);}
+   .pic1{width: 40px;height: 40px;border-radius: 20%;border: 10px solid rgb(231, 234, 236);position: absolute;left: 20px;top: 20px;background-color: rgb(231, 234, 236);}
+   .pic2{width: 40px;height: 40px;border-radius: 20%;border: 10px solid rgb(113, 119, 122);position: absolute;left: 20px;top: 20px;background-color: rgb(113, 119, 122);}
+   .txt4{position: absolute;left: 80px;top: 15px;}
+   a{position: absolute;left: 83px;top: 40px;color: gray;}
+   .left{width: 85%;height: 20px;border: 2px solid rgb(248, 245, 245);position: absolute;top: 90px;left: 20px;background-color:rgb(217, 231, 231);}
+   .right{width: 60%;height: 20px;border: 2px solid rgb(247, 245, 245);position: absolute;top: 90px;left: 20px;background-color:rgb(0, 110, 255);}
+   h6{word-spacing: 180px;position: absolute;top: 70px;left: 25px;color: gray;}
+   .gb{position: absolute;top: 70px;left: 290px;color: gray;}
+
+
+
 </style>
 
 </head>
 <body>
-    <div class="container-fluid bg-light">
-        <div class="head m-4 rounded">
-            <input class="txt rounded" type="text" placeholder="          Search..."><i class="fa-solid fa-magnifying-glass"></i>
-           <button class="btn btn-primary"><p class="txt1 text-center">+ Create New</p></button><i class="fa-solid fa-caret-down"></i>
-            <p class="txt2">▼</p>
-            <p class="txt3 fs-5">⋯</p>
+            <div class="container-fluid bg-light">
+                <div class="head m-4 rounded">
+                    <input class="txt rounded" type="text" placeholder="          Search..."><i class="fa-solid fa-magnifying-glass"></i>
+                  <button class="btn btn-primary"><p class="txt1 text-center">+ Create New</p></button><i class="fa-solid fa-caret-down"></i>
+                    <p class="txt2">▼</p>
+                    <p class="txt3 fs-5">⋯</p>
+                    
+                  <div class="row m-3" id="unique">
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <img class="pic" src="./img2/drive.png">
+                          <h5 class="txt4">Google Drive</h5>
+                          <a href="#">View Folder</a>
+                          <p class="txt2">▼</p>
+                    <p class="txt3 fs-5">⋯</p>
+                          <h6>20GB 50GB used</h6>
+                          <h6 class="gb">used</h6>
+                          <div class="left"></div>
+                          <div class="right"></div>
+                        
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <img class="pic1" src="./img2/photo2.jpg">
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <img class="pic2" src="./img2/photo3.jpg">
+                          
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+          <script>
+            const json = {"data":[{"photo":"./img4/Drive.png","photo1":"./img4/Drop Box.png","photo2":"./img4/Drop Box.png"},
+        {"photo":"./img4/File.png","photo1":"./img4/File.png","photo2":"./img4/File.png"},
+
+
+        ]}
+
+
+        let a = ""
+        for (let index = 0; index < 2; index++) {
+          let phone = json.data[index]
+            a = `${a}  
+                    <div class="row m-3" id="unique">
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <img class="pic" src="${phone.photo}">
+                          
+                            <h5 class="txt4">Google Drive</h5>
+                            <a href="#">View Folder</a>
+                            <p class="txt2">▼</p>
+                    <p class="txt3 fs-5">⋯</p>
+                    <h6>20GB 50GB</h6>
+                    <h6 class="gb">used</h6>
+                    <div class="left rounded"></div>
+                          <div class="right rounded"></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <img class="pic1" src="${phone.photo1}">
+                            <h5 class="txt4">Drop Box</h5>
+                            <a href="#">View Folder</a>
+                            <p class="txt2">▼</p>
+                    <p class="txt3 fs-5">⋯</p>
+                    <h6>20GB 50GB</h6>
+                    <h6 class="gb">used</h6>
+                    <div class="left rounded"></div>
+                          <div class="right rounded"></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <img class="pic2" src="${phone.photo2}">
+                            <h5 class="txt4">One Drive</h5>
+                            <a href="#">View Folder</a>
+                            <p class="txt2">▼</p>
+                    <p class="txt3 fs-5">⋯</p>
+                    <h6>20GB 50GB</h6>
+                    <h6 class="gb">used</h6>
+                    <div class="left rounded"></div>
+                          <div class="right rounded"></div>
+                          </div>
+                        </div>
+                    </div>
+              `
             
-           <div class="row m-3" id="unique">
-                <div class="col-sm-4">
-                  <div class="card">
-                    <img class="pic" src="./img2/drive.png">
-                    Your card
-                   
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="card">
-                    Your card
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="card">
-                    Your card
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-   <script>
-let a = ""
-for (let index = 0; index < 2; index++) {
-    a = `${a}  
-            <div class="row m-3" id="unique">
-                <div class="col-sm-4">
-                  <div class="card">
-                    <img class="pic" src="./img2/drive.png">
-                    Your card
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="card">
-                    Your card
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="card">
-                    Your card
-                  </div>
-                </div>
-            </div>
-       `
-    
-}
-document.getElementById("unique").innerHTML = a
-   </script>
-      
+        }
+        document.getElementById("unique").innerHTML = a
+          </script>
+              
         
    
-</body>
+    </body>
 </html>
