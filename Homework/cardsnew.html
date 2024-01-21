@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardsnew</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <style>
+       body{margin: 0%;padding: 0%;}
+      .head{width: 100%;height: 800px;background-color:#1f1010;position: relative;}
+      .row{position: relative;top: 50px;right:8px;}
+      .card{height: 130px;width: 100%;margin: 10px;}
+      .picture{width: 40px;height: 40px;}
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-light">
+    <div class="head m-4 rounded">
+    <div class="row m-3" id="new">
+    <div class="col-sm-4">
+        <div class="card">
+          <img class="picture" src="./img4/File.png">
+         </div>
+      </div>
+      </div>
+    </div>
+</div>
+      <script>
+let c = ""
+              for (let index = 0; index < 3; index++) {
+                // let phone = json.data[index]
+                  c = `${c}   <div class="row m-3" id="new">
+    <div class="col-sm-4">
+        <div class="card">
+          <img class="picture" src="./img4/File.png">
+         </div>
+      </div>
+      </div>`
+                  }
+                  document.getElementById("new").innerHTML = c
+      </script>
+</body>
+</html>

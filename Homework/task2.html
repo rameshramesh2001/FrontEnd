@@ -12,7 +12,7 @@
       body{margin: 0%;padding: 0%;}
       .head{width: 96%;height: 800px;background-color:#ffffff;position: relative;}
       .row{position: relative;top: 50px;right:8px;}
-      .card{height: 130px;width: 100%;}
+      .card{height: 130px;width: 100%;margin: 10px;}
       .txt{position: absolute;top: 20px;left: 50px;height: 40px;width: 320px;border: none;color: gray;}
       .fa-magnifying-glass{position: absolute;top: 31px;left: 62px;color: gray;}
       .btn{position:absolute;right: 70px;height: 40px;width: 150px;}
@@ -33,7 +33,19 @@
       .tbl{width: 10px;height: 10px;margin: 5px;}
       .txt5{position: relative;left: 10px;}
       .font{font-size: 12px;font-family: 'Roboto', sans-serif;}
-    </style>
+      .pic4{width: 35px;height: 35px;position: absolute;top: 10px;left: 25px;}
+      .txt6{position: absolute;top: 65px;left: 20px;}
+      .txt7{color: gray;position: absolute;top: 90px;left: 20px;}
+      .pic5{padding: 3px;background: #1867b1;width: 44px;height: 44px;display: block;border-radius: 50%;position: absolute;right: 80px;top: 10px;}
+      .pic6{padding: 3px;background: #1867b1;width: 44px;height: 44px;display: block;border-radius: 50%;position: absolute;right: 45px;top: 10px;}
+      .pic7{padding: 3px;background: #1867b1;width: 44px;height: 44px;display: block;border-radius: 50%;position: absolute;right: 10px;top: 10px;}
+      .txt8{color: gray;position: absolute;bottom: 10px;right: 10px;}
+      .pic8{padding: 3px;background: #1867b1;width: 44px;height: 44px;display: inline-flex;border-radius: 50%;}
+      .pic9{padding: 3px;background: #1867b1;width: 44px;height: 44px;display: block;border-radius: 50%;position: absolute;right: 330px;top: 90px;}
+      .pic10{padding: 3px;background: #1867b1;width: 44px;height: 44px;display: block;border-radius: 50%;position: absolute;right: 295px;top: 90px;}
+
+   
+   </style>
 
   </head>
  <body>
@@ -69,6 +81,39 @@
                         <img class="pic2" src="./img2/photo3.jpg">
                      </div>
                     </div>
+               
+                    <div class="col-sm-4">
+                      <div class="card">
+                        <img class="pic4" src="./img4/File.png">
+                        <h5 class="txt6">Analystic</h5>
+                        <p class="txt7">12files</p>
+                        <img class="pic4" src="./img4/File.png">
+                     <img class="pic5" src="./img5/img1.jpeg">
+                     <img class="pic6" src="./img5/img2.jpeg">
+                     <img class="pic7" src="./img5/img3.png">
+                     <p class="txt8">🕒 15 mins ago</p>
+                       </div>
+                    </div>
+                     <div class="col-sm-4">
+                       <div class="card">
+                         <img class="pic4" src="./img4/File.png">
+                         <h5 class="txt6">Skecth Design</h5>
+                         <p class="txt7">235files</p>
+                         <img class="pic6" src="./img5/img1.jpeg">
+                         <img class="pic7" src="./img5/img2.jpeg">
+                         <p class="txt8">🕒 30 mins ago</p>
+                      </div>
+                     </div>
+                     <div class="col-sm-4">
+                       <div class="card">
+                         <img class="pic4" src="./img4/File.png">
+                         <h5 class="txt6">Application</h5>
+                         <p class="txt7">20files</p>
+                         <img class="pic6" src="./img5/img2.jpeg">
+                         <img class="pic7" src="./img5/img3.png">
+                         <p class="txt8">🕒 50 mins ago</p>
+                      </div>
+                     </div>
                 </div>
                     <table class="table">
                         <thead>
@@ -96,7 +141,7 @@
                                 <td class="font"> <img class="tbl" src="./img4/File.png">Name</td>
                                 <td class="font">Date Modify</td>
                                 <td class="font">Size</td>
-                                <td class="font">Member</td> 
+                                <td class="font"><img class="pic8" src="./img5/img1.jpeg"><img class="pic9" src="./img5/"></td> 
                                 <td class="font">...</td>
                             </tr>
                         </tbody>
@@ -142,7 +187,7 @@
 
 
               let a = ""
-              for (let index = 0; index < 2; index++) {
+              for (let index = 0; index < 1; index++) {
                 let phone = json.data[index]
                   a = `${a}  
                           <div class="row m-3" id="unique">
@@ -156,7 +201,7 @@
                                     <h6>20GB 50GB</h6>
                                     <h6 class="gb">used</h6>
                                     <div class="left rounded"></div>
-                                          <div class="right rounded"></div>
+                                    <div class="right rounded"></div>
                                 </div>
                               </div>
                               <div class="col-sm-4">
@@ -185,6 +230,38 @@
                                     <div class="right rounded"></div>
                                 </div>
                               </div>
+                              <div class="col-sm-4">
+                     <div class="card">
+                       <img class="pic4" src="./img4/File.png">
+                       <h5 class="txt6">Analystic</h5>
+                       <p class="txt7">12files</p>
+                       <img class="pic4" src="./img4/File.png">
+                    <img class="pic5" src="./img5/img1.jpeg">
+                    <img class="pic6" src="./img5/img2.jpeg">
+                    <img class="pic7" src="./img5/img3.png">
+                    <p class="txt8">🕒 15 mins ago</p>
+                      </div>
+                   </div>
+                    <div class="col-sm-4">
+                      <div class="card">
+                        <img class="pic4" src="./img4/File.png">
+                        <h5 class="txt6">Skecth Design</h5>
+                        <p class="txt7">235files</p>
+                        <img class="pic6" src="./img5/img1.jpeg">
+                        <img class="pic7" src="./img5/img2.jpeg">
+                        <p class="txt8">🕒 30 mins ago</p>
+                     </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="card">
+                        <img class="pic4" src="./img4/File.png">
+                        <h5 class="txt6">Application</h5>
+                        <p class="txt7">20files</p>
+                        <img class="pic6" src="./img5/img2.jpeg">
+                        <img class="pic7" src="./img5/img3.png">
+                        <p class="txt8">🕒 50 mins ago</p>
+                     </div>
+                    </div>
                           </div>`
                     
                   
@@ -192,13 +269,13 @@
               document.getElementById("unique").innerHTML = a
 
 
-            const user = {"modify":[{"image":"./img4/File.png","name":"index.html","date":"10-11-2020,19.20","size":"5KB"},
-      {"image":"./img4/Drive.png","name":"Project A-Zip","date":"08-09-2020,13.10","size":"15KB"},
-      {"image":"./img4/Drop Box.png","name":"img1.jpg","date":"11-11-2020,09.23","size":"115KB"},
-      {"image":"./img4/File.png","name":"update list.txt","date":"15-10-2020,12.30","size":"55KB"},
-      {"image":"./img4/Drive.png","name":"project B","date":"11-11-2020,15.20","size":"58KB"},
-      {"image":"./img4/Drop Box.png","name":"Changes list.txt","date":"10-11-2020,18.50","size":"205KB"},
-      {"image":"./img4/File.png","name":"image2.png","date":"10-11-2020,19.00","size":"30KB"
+      const user = {"modify":[{"image":"./img4/File.png","name":"index.html","date":"10-11-2020,19.20","size":"5KB","image1":"./img5/img2.jpeg","image1":"./img5/img2.jpeg","image":"./img5/img3.png"},
+      {"image":"./img4/Drive.png","name":"Project A-Zip","date":"08-09-2020,13.10","size":"15KB","image1":"./img5/img1.jpeg","image1":"./img5/img1.jpeg"},
+      {"image":"./img4/Drop Box.png","name":"img1.jpg","date":"11-11-2020,09.23","size":"115KB","image1":"./img5/img1.jpeg","pic":"./img5/img1.jpeg"},
+      {"image":"./img4/File.png","name":"update list.txt","date":"15-10-2020,12.30","size":"55KB","image1":"./img5/img1.jpeg","pic":"./img5/img1.jpeg","img":"./img5/img3.png"},
+      {"image":"./img4/Drive.png","name":"project B","date":"11-11-2020,15.20","size":"58KB","image1":"./img5/img1.jpeg","pic":"./img5/img1.jpeg","img":"./img5/img3.png"},
+      {"image":"./img4/Drop Box.png","name":"Changes list.txt","date":"10-11-2020,18.50","size":"205KB","image1":"./img5/img1.jpeg","pic":"./img5/img1.jpeg"},
+      {"image":"./img4/File.png","name":"image2.png","date":"10-11-2020,19.00","size":"30KB","image1":"./img5/img1.jpeg","pic":"./img5/img1.jpeg"
 
 
             }]}
@@ -212,7 +289,10 @@
         <td class="font text-secondary">  <img class="tbl" src="${icon.image}"> ${icon.name}</td>
         <td class="font text-secondary">${icon.date}</td>
         <td class="font text-secondary">${icon.size}</td>
-        <td class="font text-secondary">Member</td>
+        <td class="font text-secondary"><img class="pic8" src="${icon.image1}">
+          <img class="pic9" src="${icon.pic}">
+          <img class="pic10" src="${icon.img}">
+          </td>
         <td class="font text-secondary">...</td>
         </tr>
         </tbody>`
@@ -220,9 +300,7 @@
       document.getElementById("content").innerHTML = b
 
 
-
-
-
+      
     </script>
                     
         
