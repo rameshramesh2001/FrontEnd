@@ -1,0 +1,31 @@
+<script>
+    const addspread = (...a)=>{
+        let d= 0;
+        a.forEach(element => {
+          d = d+element;  
+        });
+        return d;
+    }
+    const mulspread = (...a)=>{
+        let d= 1;
+        a.forEach(element => {
+          d = d-element;  
+        });
+        return d;
+    }
+    const addArr = (a)=>{
+        let d= 0;
+        a.forEach(element => {
+          d = d+element;  
+        });
+        return d;
+    }
+    console.log("Addspread : "+addspread(5,3,2,10,20))
+    console.log("mulspread : "+mulspread(5,3,2))
+    console.log("addArr : "+addArr([10,20,30]))
+    let a = [1,2,3]
+    let b = [2,2,5]
+    console.log("addspread : "+addspread(...a,...b))
+    let f = [a,b]
+    console.log("merge array : "+f)
+</script>

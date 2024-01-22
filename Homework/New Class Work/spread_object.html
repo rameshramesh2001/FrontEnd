@@ -1,0 +1,27 @@
+<button type="button" onclick="">Add new row</button>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th><td>Age</td><td>gender</td>
+        </tr>
+    </thead>
+    <tbody id="content">
+    </tbody>
+</table>
+<script>
+    let user = {"data":[{"name":"Ramesh",age:22,gender:"Male"},
+    {"name":"Raja",age:21,gender:"male"}
+    
+    ]}
+    let a = ""
+    for (let users of user.data) {
+        //a = ${a}
+        //a += 
+        a +=` <tr>
+            <th>${users.name}</th><td>${users.age}</td><td>${users.gender}</td>
+        </tr>`
+       
+        
+    }
+    document.getElementById("content").innerHTML = a
+</script>
