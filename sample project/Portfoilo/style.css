@@ -109,12 +109,12 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-.logo:hover {
+/* .logo:hover {
   cursor: default;
   background: linear-gradient(90deg, blue,red);
   background-clip: text;
   color: transparent;
-}
+} */
 
 /* HAMBURGER MENU */
 
