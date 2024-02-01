@@ -302,10 +302,10 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-h6m .auto-group-1dgz-Jow .auto-group-p6yt-3Q9 .auto-group-ph2m-L1s .group-41-CTP {
+.desktop-1-h6m .auto-group-1dgz-Jow .auto-group-p6yt-3Q9 .auto-group-ph2m-L1s .group_41_CTP {
   margin-bottom: 2.4472rem;
-  width: 9.6rem;
-  height: 4.7528rem;
+  width: 12.6rem;
+  height: 10.7528rem;
   position: relative;
   object-fit: contain;
   vertical-align: top;
@@ -929,4 +929,102 @@ body {
   left: 400px;
   border-radius: 20px;
   border: 1px solid white;
+}
+.icon-location{
+  width: 4em;
+  position: absolute;
+  left: 210px;
+}
+.wind{
+  margin: 0rem 0.1rem 0.2rem 0rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  right: 40px;
+}
+.mph-pBF{
+  margin: 0rem 0.1rem 0.2rem 0rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  right: 30px;
+}
+.search-box{
+  width: 50%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: 400px;
+}
+
+.search-box input{
+  width: 84%;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000;
+  background-color: #e6f5fb;
+  padding: 12px 16px;
+  border-radius: 14px;
+}
+
+.search-box input::placeholder{
+  color: #000;
+}
+
+.search-box button{
+  width: 46px;
+  height: 46px;
+  background-color: #e6f5fb;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  left:650px;
+}
+
+.search-box button:hover{
+  color: #fff;
+  background-color: #ababab;
+}
+.weather-item{
+  width: 9.4rem;
+  height: 3rem;
+  position: absolute;
+  left: 400px;
+  top: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.weather-item1{
+  width: 9.4rem;
+  height: 3rem;
+  position: absolute;
+  left: 600px;
+  top: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
 }
