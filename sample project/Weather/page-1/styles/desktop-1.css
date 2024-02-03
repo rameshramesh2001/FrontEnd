@@ -933,9 +933,9 @@ body {
 .icon-location{
   width: 4em;
   position: absolute;
-  left: 210px;
+  left: 250px;
 }
-.wind{
+.wind1{
   margin: 0rem 0.1rem 0.2rem 0rem;
   font-size: 2rem;
   font-weight: 500;
@@ -946,9 +946,9 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
   position: relative;
-  right: 40px;
+  right: 70px;
 }
-.mph-pBF{
+.wind{
   margin: 0rem 0.1rem 0.2rem 0rem;
   font-size: 2rem;
   font-weight: 500;
@@ -1027,4 +1027,80 @@ body {
   color: #ffffff;
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
+}
+.city{
+width: 13.2rem;
+height: 4.5rem;
+position: absolute;
+left: 0;
+top: 0;
+font-size: 3rem;
+font-weight: 300;
+line-height: 1.5;
+color: #ffffff;
+font-family: Poppins, 'Source Sans Pro';
+white-space: nowrap;
+}
+.temp{
+margin: 0rem 2.5rem 2.1rem 0rem;
+font-size: 7rem;
+font-weight: 300;
+line-height: 1.5;
+color: #f2f1f1;
+font-family: Poppins, 'Source Sans Pro';
+white-space: nowrap;
+flex-shrink: 0;
+}
+.description{
+width: 13.2rem;
+height: 4.5rem;
+position: absolute;
+right: 320px;
+bottom:400px;
+font-size: 2rem;
+font-weight: 300;
+line-height: 1.5;
+color: #ffffff;
+font-family: Poppins, 'Source Sans Pro';
+white-space: nowrap;
+}
+.icon{
+  height: 150px;
+  position: absolute;
+  right: 300px;
+  bottom:420px;
+}
+
+.humidity{
+width: 4.6rem;
+height: 3.3rem;
+position: absolute;
+left: 2.5rem;
+top: 2.8rem;
+font-size: 2.2rem;
+font-weight: 500;
+line-height: 1.5;
+color: #ffffff;
+font-family: Poppins, 'Source Sans Pro';
+white-space: nowrap;
+}
+.visibility{
+margin-left: 1.5rem;
+font-size: 2.2rem;
+font-weight: 500;
+line-height: 1.5;
+color: #ffffff;
+font-family: Poppins, 'Source Sans Pro';
+white-space: nowrap;
+flex-shrink: 0;
+}
+.air_pressure{
+margin-left: 1.3rem;
+font-size: 2.2rem;
+font-weight: 500;
+line-height: 1.5;
+color: #ffffff;
+font-family: Poppins, 'Source Sans Pro';
+white-space: nowrap;
+flex-shrink: 0;
 }
