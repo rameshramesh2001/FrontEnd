@@ -1,13 +1,9 @@
 //https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 
-
-let API_KEY = "14a7dc6e66753efcc57971e58116a5c5";
-// const weathericon = document.querySelector(".group_41_CTP");
 const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
 const currentWeatherItemsEl = document.getElementById('current-weather-items');
-// const wicon = document.querySelector(".group_41_CTP");
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -31,10 +27,10 @@ setInterval(() => {
 
 let weather = {
     apiKey: "14a7dc6e66753efcc57971e58116a5c5",
-    fetchWeather: function (city) {
+    fetchWeather: function (place) {
       fetch(
         "https://api.openweathermap.org/data/2.5/weather?q=" +
-          city +
+        place +
           "&units=metric&appid=" +
           this.apiKey
       )
@@ -45,34 +41,26 @@ let weather = {
           }
           return response.json();
         })
-        .then((data) => this.displayWeather(data));
+        .then((data) => this.mainWeather(data));
     },
-    displayWeather: function (weatherdata) {
-      const { name } = weatherdata;
-      const { icon, description } = weatherdata.weather[0];
-      const { temp, humidity } = weatherdata.main;
-      const { speed } = weatherdata.wind;
-      const {sunrise} = weatherdata.sys;
-      const {sunset}  = weatherdata.sys;
-      // const {visibility} = weatherdata.visibility;
-      document.querySelector(".city").innerText = name;
+    mainWeather: function (weatherdata) {
+      document.querySelector(".city").innerText =  weatherdata.name;
       document.querySelector(".icon").src =
-        "https://openweathermap.org/img/wn/" + icon + ".png";
-      document.querySelector(".description").innerText = description;
-      document.querySelector(".temp").innerText = temp + "°C";
-      document.querySelector(".humidity").innerText =
-       + humidity + "%";
+        "https://openweathermap.org/img/wn/" + weatherdata.weather[0].icon + ".png";
+      document.querySelector(".description").innerText = weatherdata.weather[0].description;
+      document.querySelector(".temp").innerText = weatherdata.main.temp + "°C";
+      document.querySelector(".humidity").innerText =weatherdata.main.humidity + "%";
       document.querySelector(".wind").innerText =
-        + speed + " km/h";
+        + weatherdata.wind.speed + " km/h";
       document.querySelector(".visibility").innerText = weatherdata.visibility + " km/h";
       document.querySelector(".air_pressure").innerText = weatherdata.main.pressure + " hpa";
-      document.querySelector(".sunrise").innerText = window.moment(sunrise * 1000).format('HH:mm a');
-      document.querySelector(".sunset").innerText =  window.moment(sunset * 1000).format('HH:mm a');
+      document.querySelector(".sunrise").innerText = weatherdata.sys.window.moment(sunrise * 1000).format('HH:mm a');
+      document.querySelector(".sunset").innerText = weatherdata.sys.window.moment(sunset * 1000).format('HH:mm a');
 
 
-      document.querySelector(".weather").classList.remove("loading");
-      document.body.style.backgroundImage =
-        "url('https://source.unsplash.com/1600x900/?" + name + "')";
+      // document.querySelector(".weather").classList.remove("loading");
+      // document.body.style.backgroundImage =
+      //   "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
     search: function () {
       this.fetchWeather(document.querySelector(".search-bar").value);
@@ -91,7 +79,7 @@ let weather = {
       }
     });
   
-  weather.fetchWeather("Denver");
+  weather.fetchWeather("Sivakasi");
 
 
 
